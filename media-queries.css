@@ -1,0 +1,332 @@
+/* media queries */
+/* Styles for mobile screens (phones, small tablets) */
+@media (max-width: 767px) {
+    
+    /* preloader */
+    #logo-image {
+        display: none;
+        margin-top: 20px; /* Add some spacing from the text */
+        width: 200px; /* Adjust size as needed */
+    }
+
+    #loading-text {
+        font-family: "Kanit", sans-serif;
+        font-size: 2rem ; /* Change this value to adjust the text size */
+    }
+
+    /* navbar */
+
+    .logo-right{
+       display: none;
+    } 
+    .logo-left{
+        margin-left: 0px;
+    } 
+ 
+    /* heading */
+    .haeding__delay-3s{
+        font-size: 2.5em; 
+    }
+    #bouncingImage{
+       width: 55%;
+      margin-left:6.3em;
+      height: 3em;
+    }
+
+    /* buttons */
+
+    .brand-text{
+        display: none;
+    }
+    .brand-text-new{
+        display: block;
+        color: whitesmoke;
+    }
+    .btn1,.btn2,.btn3{
+        width: 88%;
+        animation-delay: 3s;
+         margin-bottom: 5%;
+        
+    }
+    .buttons{
+        margin-top: 8%;
+        
+        object-fit: cover;
+    }
+    .brand-text-new{
+        margin-top: 3%;
+    }
+
+    /* round-logo */
+    .round-logo {
+        width: 120px;
+        height: 120px;
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in 5s forwards, spin 8s linear 3s;
+        margin-top: -65px;
+        border-radius: 50%;      
+    }
+
+    .bouncing-div{
+        margin-top: 20%;
+    }
+
+    /* 3-cards */
+
+    .p-card-alter{
+        display: none;
+    }
+    .p-card-altered{
+        display: block;
+    }
+    .p-cards{
+        font-size: 16px;
+        max-width: 300px;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 10%;
+    }
+
+    /* 3-card animations     */
+    .animate__bounce { 
+        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 3s;
+        animation-delay: 6s; /* don't forget to set a duration! */
+      }
+    
+      @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0px); /* Initial and final position */
+        }
+        50% {
+            transform: translateY(-10px); /* Bouncing up */
+        }
+    }
+    .anim{
+        animation: anim infinite; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 3s;
+        animation-delay: 6s; /* don't forget to set a duration! */ 
+    }
+    @keyframes anim {
+        0%, 100% {
+            transform: translateY(-10px); /* Initial and final position */
+        }
+        50% {
+            transform: translateY(0px); /* Bouncing up */
+        }
+    }
+
+
+    /* 3-card texts */
+    .service-screen{
+        display: none;
+    }
+    .service-phone-div{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 5%;
+    }
+    .what-screen{
+        margin-left: 7%;
+    }
+
+
+    /* portfolio */
+
+    .portfolio{
+        margin-top: 5%;
+        
+    }
+    .port-text{
+        text-align: center;
+        margin-left: 0%;
+        font-size: 24px;
+    }
+    .port-para{
+        text-align: center;
+        margin-left: 0%;
+        font-size: 18px;
+        margin-bottom:5% ;
+    }
+    .pink{
+        width: 15%;
+        margin-left: 50%;
+        margin-top: -64%;
+    }
+
+
+    /* blue div */
+    .book1{
+        width: 18%;
+        margin-bottom: -30%;
+        margin-left: 55%;
+    }
+    .book2{
+        display:none;
+    }
+   .sui1{
+    display: none;
+   }
+   .sui2{
+    display: block;
+   }
+   .p1,.p2{
+    margin-left: 22%;
+    margin-bottom: 3%;
+    }
+    .p3,.p4{
+        margin-left: 22%;
+        margin-bottom: 3%;
+    }
+    .move{
+        margin-left: 46%;
+    }
+    .sep{
+        margin-left: 46%;
+    }
+    .grec{
+        margin-top: 5%;
+        padding: 0 22%;
+    }
+    .start-btn{
+        font-size:1em;
+    }
+    .p{
+        text-align: center;
+        font-size: 12px;
+        
+    }
+
+    /* project title */
+    .proj{
+        text-align: center;
+    }
+    .proj-title {
+        font-size: 20px;
+    }
+    .project-1,.project-2,.project-3,.project-4 {
+        width: 100%;
+        position: relative;
+    }
+   
+
+    /* swipper (2) */
+   .show{
+    display: none;
+   }
+   .none{
+    display: block;
+   }
+   .swp-two-para{
+    font-size: 13px;
+    text-align: center;
+   }
+   .ceo{
+    font-size: 16px;
+    margin-right: 0%;
+    text-align: center;
+   }
+   .client-name{
+    text-align: center;
+    margin-right: 0%;
+    font-size: 18px;
+   }
+
+   .testimonial{
+    color: #9500ffcb;
+    font-size: 16px;
+}
+
+.words{
+    color: #fff;
+    font-size: 24px;
+    font-weight:600;
+}
+
+.chaat{
+    width: 70%;
+}
+.ast{
+    margin-top: -20%;
+    width: 70%;
+}
+.pencil{
+  width: 30%;
+}
+.fire{
+    margin-bottom: -52%;
+    width: 40%;
+}
+
+/* auto scrolling tickers */
+.scroll-container-two {
+    display: none;
+}
+.scroll-container-three {
+    display: none;
+}
+.card {
+    min-width: 250px;
+    margin: 0 10px;
+}
+
+.insta{
+    width: 10%;
+}
+.banestudio-text{
+    font-size: 2em;
+    font-weight:500;
+    margin-top: 4%;
+}
+
+/* footer ticker */
+.display-none{
+    display: none;
+  }
+.hello{
+    width: 18%;
+    margin-left: 40%;
+    margin-bottom: -7%;
+}
+.trusted{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+.ready{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 11%;
+    max-width: 300px;
+    font-weight: 500;
+  }
+  .start{
+    text-align: center;
+    background-color: #FFDA58;
+    padding: 10px 0;
+    border-radius: 50px;
+    font-size:16px;
+  }
+
+.footer-logo{
+    margin-left: 38%;
+    margin-top: -18%;
+    width: 25%;
+}
+
+.space-logo{
+    display: none;
+}
+
+
+
+
+
+}
+
+
+
+
